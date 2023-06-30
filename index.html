@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="image/book-7.png" rel="icon">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <div class="header-1">
+
+            <a href="#" class="logo"> Books</a>
+
+        </div>
+
+        <div class="header-2">
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#featured">Kids</a>
+                <a href="#featured1">Novels</a>
+                <a href="#blogs">Blogs</a>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <nav class="bottom-navbar">
+        <a href="#home"></a>
+        <a href="#featured"></a>
+        <a href="#blogs"></a>
+    </nav>
+
+
+    <section class="home" id="home">
+
+        <div class="row">
+
+            <div class="content">
+                <h3>Enjoy Popular Books</h3>
+                <p>Get access to variety of books here </p>
+                <a href="#featured" class="btn">Read for Free</a>
+            </div>
+
+            <div class="swiper books-slider">
+                <div class="swiper-wrapper">
+                    <a href="#book1" class="swiper-slide"><img src="image/book-1.png" alt=""></a>
+                    <a href="#book2" class="swiper-slide"><img src="image/book-2.png" alt=""></a>
+                    <a href="#book3" class="swiper-slide"><img src="image/book-3.png" alt=""></a>
+                    <a href="#book4" class="swiper-slide"><img src="image/book-4.png" alt=""></a>
+                    <a href="#book4" class="swiper-slide"><img src="image/book-3.png" alt=""></a>
+                    <a href="#book3" class="swiper-slide"><img src="image/book-6.png" alt=""></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="featured" id="featured">
+        <span class="d-inline-search"><input type="text" id="myInput" onkeyup="searchBook1()" placeholder="Search for Kid books.." title="Kiddies search"> </span>
+            <span class="d-inline-sort"><p><button class="btn" onclick="sortTable1()">Sort</button></p></span>
+
+        <h1 class="heading"> <span>Kids Stories</span> </h1>
+
+        <div class="swiper featured-slider">
+
+            <table id="myTable">
+
+                <tr>
+                    <th></th>
+                </tr>
+
+                <tr>
+                <td>
+                    <div class="swiper-slide box">
+
+                        <div id="book3" class="image">
+                            <img src="image/raven.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>The Royal Raven</h3>
+                            <a href="third.html" class="btn">Read Book</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        <div class="swiper-slide box">
+
+                            <div class="image">
+                                <img src="image/playground.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>A Day at the Playground</h3>
+                                <a href="second.html" class="btn">Read Book</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="swiper-slide box">
+    
+                            <div id="book1" class="image">
+                                <img src="image/finbo.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Finbo</h3>
+                                <a href="first.html" class="btn">Read Book</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </section>
+
+    <section class="featured" id="featured1">
+        <span class="d-inline-search"><input type="text" id="mySearch" onkeyup="searchBook2()" placeholder="Search for Novels.." title="Novels search"></span>
+        <span class="d-inline-sort"><p><button class="btn" onclick="sortTable2()">Sort</button></p></span>
+
+
+        <h1 class="heading"> <span>Novels</span> </h1>
+
+        <div class="swiper featured-slider">
+
+            <table id="myTables">
+
+                <tr>
+                    <th></th>
+                </tr>
+
+                <tr>
+                <td>
+                    <div class="swiper-slide box">
+                        <div id="book1" class="image">
+                            <img src="image/lost-egg.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h3>The Lost Egg</h3>
+                            <a href="sixth.html" class="btn">Read Book</a>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+                <tr>
+                    <td>
+                        <div class="swiper-slide box">
+
+                            <div id="book4" class="image">
+                                <img src="image/bored.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Bored Boris</h3>
+                                <a href="fifth.html" class="btn">Read Book</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="swiper-slide box">
+
+                            <div id="book4" class="image">
+                                <img src="image/bunnies.jpg" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>Ten Little Bunnies</h3>
+                                <a href="fourth.html" class="btn">Read Book</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+
+    </section>
+
+
+    <section class="deal">
+
+        <div class="content">
+            <h3>Book of the day</h3>
+            <a href="#" class="btn">Read Here</a>
+        </div>
+
+        <div class="image">
+            <img src="image/deal-img.jpg" alt="">
+        </div>
+
+    </section>
+
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading"> <span>Our Blogs</span> </h1>
+
+        <div class="swiper blogs-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/blog-1.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>BLOG 01</h3>
+                        <p>How to assimilate what you read.</p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <div class="image">
+                        <img src="image/blog-2.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>BLOG 02</h3>
+                        <p>How books affect lives.</p>
+                        <a href="#" class="btn">Read more</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Our Locations</h3>
+                <a href="#"> Nigeria </a>
+                <a href="#"> USA </a>
+                <a href="#"> Russia </a>
+                <a href="#"> France </a>
+                <a href="#"> Japan </a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#featured">Kids</a>
+                <a href="#featured1">Novels</a>
+                <a href="#blogs">Blogs</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#">+2348189345969 </a>
+                <a href="#">+2348132389633 </a>
+                <a href="#">adioayomide02@gmail.com </a>
+            </div>
+
+            <div class="box">
+                <h3>Social</h3>
+                <a href="#">Instagram </a>
+                <a href="#">Facebook </a>
+                <a href="#">Twitter </a>
+            </div>
+
+        </div>
+
+
+    </section>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
